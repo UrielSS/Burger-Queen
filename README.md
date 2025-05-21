@@ -23,7 +23,6 @@
 ## 📱 Capturas de Pantalla
 
 
-
 ## 🚀 Instalación y Configuración
 
 ### Prerrequisitos
@@ -48,13 +47,13 @@ npm install
 3. Configurar variables de entorno:
    - Crear un archivo `.env` en la raíz del proyecto
    - Añadir las siguientes variables desde tu cuenta de Stripe:
-   ```
+   ```bash
   publishKey: 'tu_clave_publica',
-  secretKey: 'tu_clave_secreta'
-   ```
-
+  secretKey: 'tu_clave_secreta',
+  ```
+  ```
 4. Iniciar la aplicación en modo desarrollo:
-```bash
+``` bash
 ionic serve -o
 ```
 
