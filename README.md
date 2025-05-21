@@ -1,65 +1,81 @@
 # 🍔 Burger Queen
 
-## Descripción
-**Burger Queen** es una aplicación móvil desarrollada con **Ionic 7**, diseñada para gestionar pedidos en un restaurante de comida rápida. La aplicación ofrece una interfaz intuitiva que permite a los usuarios realizar pedidos, procesar pagos a través de **Stripe** y gestionar la información del restaurante de manera eficiente.
+## 📖 Descripción
+
+**Burger Queen** es una aplicación móvil desarrollada con **Ionic 7**, diseñada para gestionar pedidos en un restaurante de comida rápida. Ofrece una interfaz intuitiva que permite a los usuarios realizar pedidos, procesar pagos a través de **Stripe** y administrar eficientemente la información del restaurante.
+
+---
 
 ## ✨ Características Principales
 
-- **Gestión de Pedidos**: Interfaz intuitiva para la creación y seguimiento de pedidos
-- **Procesamiento de Pagos**: Integración con Stripe para pagos seguros
-- **Autenticación de Usuarios**: Sistema de inicio de sesión seguro 
-- **Base de Datos**: Almacenamiento y gestión eficiente de datos
-- **Multiplataforma**: Desarrollada con Ionic para funcionar en iOS y Android
-- **Funcionalidades Nativas**: Implementación de herramientas de Capacitor para acceso a funciones del dispositivo
+- **Gestión de Pedidos**: Interfaz amigable para la creación y seguimiento de pedidos.
+- **Procesamiento de Pagos**: Integración con **Stripe** para pagos seguros y rápidos.
+- **Autenticación de Usuarios**: Sistema de inicio de sesión confiable.
+- **Base de Datos**: Almacenamiento eficiente de información relevante.
+- **Multiplataforma**: Compatible con dispositivos **iOS** y **Android**.
+- **Funcionalidades Nativas**: Uso de **Capacitor** para acceso a funciones del dispositivo.
+
+---
 
 ## 🛠️ Tecnologías Utilizadas
 
-- **Ionic 7**: Framework para el desarrollo de aplicaciones móviles híbridas
-- **Angular**: Framework front-end para crear interfaces de usuario
-- **Capacitor**: Acceso a APIs nativas del dispositivo
-- **Stripe**: Plataforma de procesamiento de pagos
-- **TypeScript**: Lenguaje de programación tipado
+- **Ionic 7**: Framework para desarrollo de aplicaciones móviles híbridas.
+- **Angular**: Framework frontend para construir interfaces modernas.
+- **Capacitor**: Herramienta para acceder a funcionalidades nativas.
+- **Stripe**: Plataforma de procesamiento de pagos.
+- **TypeScript**: Lenguaje tipado que mejora la calidad del código.
+
+---
 
 ## 📱 Capturas de Pantalla
 
 
+---
+
 ## 🚀 Instalación y Configuración
 
-### Prerrequisitos
-- Node.js (v14 o superior)
-- npm (v6 o superior)
-- Ionic CLI (`npm install -g @ionic/cli`)
-- Cuenta de Stripe para la integración de pagos
+### 🔧 Prerrequisitos
 
-### Pasos de Instalación
+- Node.js (v14 o superior)  
+- npm (v6 o superior)  
+- Ionic CLI  
+  ```bash
+  npm install -g @ionic/cli
+  ```
+- Cuenta activa en [Stripe](https://stripe.com) para procesar pagos
 
-1. Clonar el repositorio:
-```bash
-git clone https://github.com/UrielSS/Burger-Queen.git
-cd Burger-Queen
-```
+### 📦 Pasos de Instalación
 
-2. Instalar dependencias:
-```bash
-npm install
-```
-
-3. Configurar variables de entorno:
-   - Crear un archivo `.env` en la raíz del proyecto
-   - Añadir las siguientes variables desde tu cuenta de Stripe:
+1. **Clona el repositorio:**
    ```bash
-  publishKey: 'tu_clave_publica',
-  secretKey: 'tu_clave_secreta',
-  ```
-  ```
-4. Iniciar la aplicación en modo desarrollo:
-``` bash
-ionic serve -o
-```
+   git clone https://github.com/UrielSS/Burger-Queen.git
+   cd Burger-Queen
+   ```
 
-### Compilación para Plataformas Móviles
+2. **Instala las dependencias:**
+   ```bash
+   npm install
+   ```
 
-#### Android
+3. **Configura las variables de entorno:**
+   Crea un archivo `.env` en la raíz del proyecto con el siguiente contenido:
+
+   ```env
+   publishKey=tu_clave_publica
+   secretKey=tu_clave_secreta
+   ```
+
+4. **Inicia la aplicación en modo desarrollo:**
+   ```bash
+   ionic serve -o
+   ```
+
+---
+
+## 📲 Compilación para Plataformas Móviles
+
+### 📱 Android
+
 ```bash
 ionic build
 ionic cap add android
@@ -68,7 +84,8 @@ ionic cap sync android
 ionic cap open android
 ```
 
-#### iOS
+### 🍏 iOS
+
 ```bash
 ionic build
 ionic cap add ios
@@ -77,10 +94,13 @@ ionic cap sync ios
 ionic cap open ios
 ```
 
+> ⚠️ *Para compilar en iOS necesitas macOS y Xcode instalado.*
+
+---
+
 ## 📋 Uso de la Aplicación
 
-1. **Inicio de Sesión**: Accede con tus credenciales de usuario
-2. **Panel Principal**: Visualiza los pedidos activos y su estado
-3. **Crear Pedido**: Añade productos al carrito y completa la información del cliente
-4. **Procesar Pago**: Utiliza la integración con Stripe para cobrar al cliente
-
+1. **Inicio de Sesión**: Accede con tus credenciales.
+2. **Panel Principal**: Consulta pedidos activos y su estado.
+3. **Crear Pedido**: Selecciona productos y registra la información del cliente.
+4. **Procesar Pago**: Finaliza el pedido usando Stripe para el cobro.
